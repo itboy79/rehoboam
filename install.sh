@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Rehoboam installer — copies the skill into Claude Code's personal skills dir.
+# Brigade installer — copies the skill into Claude Code's personal skills dir.
 set -euo pipefail
 
-TARGET="${1:-$HOME/.claude/skills/rehoboam}"
+TARGET="${1:-$HOME/.claude/skills/brigade}"
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 command -v python3 >/dev/null 2>&1 || {
@@ -12,6 +12,6 @@ command -v python3 >/dev/null 2>&1 || {
 mkdir -p "$TARGET"
 cp -R "$SRC/SKILL.md" "$SRC/scripts" "$SRC/references" "$SRC/assets" "$TARGET/"
 
-echo "◉ Rehoboam installed at $TARGET"
-echo "  Try it in Claude Code:  /rehoboam <task to build>"
-python3 "$TARGET/scripts/rehoboam_intro.py" 2>/dev/null || true
+echo "🔔 Brigade installed at $TARGET"
+echo "  Try it in Claude Code:  /brigade <task to build>"
+python3 "$TARGET/scripts/brigade_intro.py" 2>/dev/null || true
