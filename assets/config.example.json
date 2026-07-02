@@ -1,0 +1,23 @@
+{
+  "head": {
+    "provider": "anthropic",
+    "model": "claude-fable-5"
+  },
+  "executor": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-6"
+  },
+  "reviewer": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-6"
+  },
+  "max_parallel_arms": 4,
+  "max_revision_rounds": 2,
+  "use_worktrees": "auto",
+
+  "_examples": {
+    "executor_openai": { "provider": "openai", "model": "gpt-5.2-codex" },
+    "executor_local":  { "provider": "ollama", "model": "qwen2.5-coder:14b" },
+    "reviewer_local":  { "provider": "ollama", "model": "llama3.3:70b" }
+  }
+}

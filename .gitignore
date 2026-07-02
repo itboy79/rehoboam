@@ -1,0 +1,18 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+
+# rehoboam runtime artifacts (created in target repos, not here — belt & braces)
+.rehoboam/runs/
+*-arm-*/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# packaged skill bundles
+*.skill
+*.zip
