@@ -3,9 +3,10 @@ __pycache__/
 *.py[cod]
 .venv/
 
-# rehoboam runtime artifacts (created in target repos, not here — belt & braces)
-.rehoboam/runs/
-*-arm-*/
+# brigade runtime artifacts (created in target repos, not here — belt & braces)
+.rehoboam/
+.brigade/runs/
+*-station-*/
 
 # os / editor
 .DS_Store

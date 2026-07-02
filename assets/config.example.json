@@ -1,23 +1,23 @@
 {
-  "head": {
+  "chef": {
     "provider": "anthropic",
     "model": "claude-fable-5"
   },
-  "executor": {
+  "cook": {
     "provider": "anthropic",
     "model": "claude-sonnet-5"
   },
-  "reviewer": {
+  "pass": {
     "provider": "anthropic",
     "model": "claude-sonnet-5"
   },
-  "max_parallel_arms": 4,
-  "max_revision_rounds": 2,
-  "use_worktrees": "auto",
+  "max_parallel_cooks": 4,
+  "max_refires": 2,
+  "use_stations": "auto",
 
   "_examples": {
-    "executor_openai": { "provider": "openai", "model": "gpt-5.2-codex" },
-    "executor_local":  { "provider": "ollama", "model": "qwen2.5-coder:14b" },
-    "reviewer_local":  { "provider": "ollama", "model": "llama3.3:70b" }
+    "cook_openai": { "provider": "openai", "model": "gpt-5.2-codex" },
+    "cook_local":  { "provider": "ollama", "model": "qwen2.5-coder:14b" },
+    "pass_local":  { "provider": "ollama", "model": "llama3.3:70b" }
   }
 }
