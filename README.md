@@ -17,7 +17,7 @@ A multi-agent build orchestrator, packaged as a [Claude Code skill](https://docs
 
 - 🧠 **The Head** — a strong model that scouts the codebase, splits the task
   into self-contained briefs, and *never writes the implementation itself*.
-- 🐙 **The Arms** — parallel executors (cheaper/faster models, **any
+- 🦾🦾🦾 **The Arms** — parallel executors (cheaper/faster models, **any
   provider**: Anthropic, OpenAI-compatible, Ollama), isolated in git
   worktrees when needed.
 - 🔍 **The Reviewer** — a fresh-context judge that reads the *real diff* and
