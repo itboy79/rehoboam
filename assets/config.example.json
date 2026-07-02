@@ -5,11 +5,11 @@
   },
   "executor": {
     "provider": "anthropic",
-    "model": "claude-sonnet-4-6"
+    "model": "claude-sonnet-5"
   },
   "reviewer": {
     "provider": "anthropic",
-    "model": "claude-sonnet-4-6"
+    "model": "claude-sonnet-5"
   },
   "max_parallel_arms": 4,
   "max_revision_rounds": 2,

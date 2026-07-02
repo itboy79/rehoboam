@@ -103,7 +103,7 @@ Per-repo config lives in `.rehoboam/config.json` (created from
 ```jsonc
 {
   "head":     { "provider": "anthropic", "model": "claude-fable-5" },
-  "executor": { "provider": "anthropic", "model": "claude-sonnet-4-6" },
+  "executor": { "provider": "anthropic", "model": "claude-sonnet-5" },
   "reviewer": { "provider": "ollama",    "model": "llama3.3:70b" },
   "max_parallel_arms": 4,
   "max_revision_rounds": 2,
